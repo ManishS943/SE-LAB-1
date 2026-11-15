@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1850" height="1350" viewBox="0 0 1850 1350" role="img" aria-labelledby="title desc">
+<title id="title">Hostel Maintenance and Issue Ticketing UML Use-Case Diagram</title>
+<desc id="desc">Resident and Maintenance Warden goals inside a system boundary, mandatory ticket validation, conditional SLA escalation, and a supporting SMS/email gateway.</desc>
+<defs><marker id="openArrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 12 7 L 1 13" fill="none" stroke="#475f70" stroke-width="2"/></marker></defs>
+<rect width="1850" height="1350" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="925" y="52" text-anchor="middle" dominant-baseline="middle" font-size="36" font-weight="700" fill="#183649">Hostel Maintenance and Issue Ticketing</text>
+<text x="925" y="98" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="400" fill="#183649">SE Lab 1 | UML use-case model based on the repository requirements</text>
+<rect x="230" y="150" width="1350" height="1060" rx="3" fill="white" stroke="#183649" stroke-width="3"/>
+<text x="905" y="190" text-anchor="middle" dominant-baseline="middle" font-size="25" font-weight="700" fill="#183649">Hostel Maintenance and Issue Ticketing System</text>
+<polyline points="133,600 340,300" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="133,600 340,550" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="133,600 320,800" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1667,600 1470,300" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1667,600 1470,550" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1667,600 1470,800" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1667,600 1475,1030" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="950,1112 950,1170 1610,1170 1610,1050 1667,1050" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<circle cx="100" cy="555" r="20" fill="white" stroke="#183649" stroke-width="3"/>
+<polyline points="100,575 100,635" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="67,600 133,600" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="100,635 72,675" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="100,635 128,675" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<text x="100" y="710" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="700" fill="#183649">Hostel</text>
+<text x="100" y="739" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="700" fill="#183649">Resident</text>
+<circle cx="1700" cy="555" r="20" fill="white" stroke="#183649" stroke-width="3"/>
+<polyline points="1700,575 1700,635" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1667,600 1733,600" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1700,635 1672,675" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1700,635 1728,675" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<text x="1700" y="710" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="700" fill="#183649">Maintenance</text>
+<text x="1700" y="739" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="700" fill="#183649">Warden</text>
+<circle cx="1700" cy="1005" r="20" fill="white" stroke="#183649" stroke-width="3"/>
+<polyline points="1700,1025 1700,1085" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1667,1050 1733,1050" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1700,1085 1672,1125" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<polyline points="1700,1085 1728,1125" fill="none" stroke="#475f70" stroke-width="2.3"  />
+<text x="1700" y="1160" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="700" fill="#183649">SMS/email</text>
+<text x="1700" y="1189" text-anchor="middle" dominant-baseline="middle" font-size="23" font-weight="700" fill="#183649">Gateway</text>
+<ellipse cx="500" cy="300" rx="160" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="500" y="273" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-01</text>
+<text x="500" y="302" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Log Maintenance</text>
+<text x="500" y="326" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Ticket</text>
+<ellipse cx="900" cy="300" rx="170" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="900" y="273" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-02</text>
+<text x="900" y="302" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Validate Ticket</text>
+<text x="900" y="326" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Details</text>
+<ellipse cx="1300" cy="300" rx="170" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="1300" y="273" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-04</text>
+<text x="1300" y="302" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Manage Ticket</text>
+<text x="1300" y="326" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Queue</text>
+<ellipse cx="500" cy="550" rx="160" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="500" y="523" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-03</text>
+<text x="500" y="552" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Track Own Ticket</text>
+<text x="500" y="576" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Status</text>
+<ellipse cx="1300" cy="550" rx="170" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="1300" y="523" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-05</text>
+<text x="1300" y="552" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Prioritize and</text>
+<text x="1300" y="576" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Assign Work</text>
+<ellipse cx="500" cy="800" rx="180" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="500" y="773" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-07</text>
+<text x="500" y="802" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Confirm and Close</text>
+<text x="500" y="826" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Own Ticket</text>
+<ellipse cx="1300" cy="800" rx="170" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="1300" y="773" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-06</text>
+<text x="1300" y="802" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Update Ticket</text>
+<text x="1300" y="826" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Status</text>
+<ellipse cx="1300" cy="1030" rx="175" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="1300" y="1003" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-08</text>
+<text x="1300" y="1032" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Close with</text>
+<text x="1300" y="1056" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Warden Override</text>
+<ellipse cx="550" cy="1060" rx="150" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="550" y="1033" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-09</text>
+<text x="550" y="1062" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Monitor SLA</text>
+<ellipse cx="950" cy="1060" rx="165" ry="52" fill="#eef4f7" stroke="#21495e" stroke-width="2.5"/>
+<text x="950" y="1033" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="#183649">UC-10</text>
+<text x="950" y="1062" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Queue Escalation</text>
+<text x="950" y="1086" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="400" fill="#183649">Alert</text>
+<polyline points="660,300 730,300" fill="none" stroke="#475f70" stroke-width="2.3" stroke-dasharray="9 6" marker-end="url(#openArrow)"/>
+<text x="700" y="240" text-anchor="middle" dominant-baseline="middle" font-size="20" font-weight="700" fill="#183649">&lt;&lt;include&gt;&gt;</text>
+<polyline points="785,1060 700,1060" fill="none" stroke="#475f70" stroke-width="2.3" stroke-dasharray="9 6" marker-end="url(#openArrow)"/>
+<text x="745" y="989" text-anchor="middle" dominant-baseline="middle" font-size="20" font-weight="700" fill="#183649">&lt;&lt;extend&gt;&gt;</text>
+<text x="745" y="1140" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="400" fill="#183649">[eligible high-priority ticket stale &gt;= 24h]</text>
+<path d="M 770 555 L 1020 555 L 1040 575 L 1040 770 L 770 770 Z M 1020 555 L 1020 575 L 1040 575" fill="#fff7e6" stroke="#a78a52" stroke-width="1.5"/>
+<text x="905" y="588" text-anchor="middle" dominant-baseline="middle" font-size="19" font-weight="400" fill="#183649">Authentication is a</text>
+<text x="905" y="613" text-anchor="middle" dominant-baseline="middle" font-size="19" font-weight="400" fill="#183649">precondition; ownership</text>
+<text x="905" y="638" text-anchor="middle" dominant-baseline="middle" font-size="19" font-weight="400" fill="#183649">and role checks apply</text>
+<text x="905" y="663" text-anchor="middle" dominant-baseline="middle" font-size="19" font-weight="400" fill="#183649">to protected requests.</text>
+<text x="905" y="713" text-anchor="middle" dominant-baseline="middle" font-size="19" font-weight="400" fill="#183649">SLA monitoring is an</text>
+<text x="905" y="738" text-anchor="middle" dominant-baseline="middle" font-size="19" font-weight="400" fill="#183649">internal timed behavior.</text>
+<text x="925" y="1260" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="400" fill="#183649">Solid line: actor association | dashed open arrow: include / extend</text>
+<text x="925" y="1302" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="400" fill="#183649">Closure requires resident confirmation or a documented Warden override; no automatic closure.</text>
+</g></svg>

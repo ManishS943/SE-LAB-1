@@ -1,0 +1,58 @@
+[
+  {
+    "id": "FR-001",
+    "type": "Functional",
+    "description": "The system shall allow an authenticated Hostel Resident to log a plumbing, electrical, or carpentry ticket using an assigned-room tag, issue severity, description, geo-location tag, and optional photo attachment.",
+    "priority": "High",
+    "acceptance": "Pass: A complete ticket receives a unique ID, Reported status, timestamp, and Warden queue entry. Fail: A ticket is accepted without a room tag, category, or severity.",
+    "rationale": "Captures actionable, location-specific information for maintenance triage."
+  },
+  {
+    "id": "FR-002",
+    "type": "Functional",
+    "description": "The system shall validate that the room tag belongs to the authenticated resident before creating a ticket.",
+    "priority": "High",
+    "acceptance": "Pass: A resident submits only for their assigned room; the room and geo-location are stored. Fail: A resident submits for another resident\u2019s room.",
+    "rationale": "Prevents false reports and gives staff the exact service location."
+  },
+  {
+    "id": "FR-003",
+    "type": "Functional",
+    "description": "The system shall allow a resident to view the status and chronological history of their own tickets, including Reported, Assigned, In Progress, Resolved, and Closed.",
+    "priority": "Medium",
+    "acceptance": "Pass: The resident sees every saved status change with its timestamp. Fail: The history omits an update or exposes another resident\u2019s ticket.",
+    "rationale": "Keeps residents informed and reduces repeated enquiries."
+  },
+  {
+    "id": "FR-004",
+    "type": "Functional",
+    "description": "The system shall allow the Maintenance Warden to view, filter, prioritize, assign maintenance staff to, and update open tickets.",
+    "priority": "High",
+    "acceptance": "Pass: The Warden filters the queue, assigns staff, and saves an update visible in ticket history. Fail: The assignment or update is not retained.",
+    "rationale": "Supports accountable dispatch and operational tracking."
+  },
+  {
+    "id": "FR-005",
+    "type": "Functional",
+    "description": "The system shall request resident closure sign-off when the Warden marks a ticket Resolved and shall close it only after confirmation or a documented Warden override.",
+    "priority": "Medium",
+    "acceptance": "Pass: Resident confirmation records a sign-off timestamp and changes the ticket to Closed. Fail: A ticket closes without sign-off or override reason.",
+    "rationale": "Confirms repair quality and records an auditable closure decision."
+  },
+  {
+    "id": "NFR-001",
+    "type": "Performance & Reliability",
+    "description": "The system shall detect every high-priority ticket with no status change for 24 hours and queue an escalation SMS/email to the Maintenance Warden within 5 minutes of the SLA breach.",
+    "priority": "High",
+    "acceptance": "Pass: With 100 overdue high-priority tickets under simulated peak load, every escalation is queued within 5 minutes and logged once. Fail: Any overdue ticket remains unalerted or receives a duplicate alert.",
+    "rationale": "Ensures urgent issues cannot remain unattended."
+  },
+  {
+    "id": "NFR-002",
+    "type": "Security & Privacy",
+    "description": "The system shall require authentication, enforce role-based access control, and restrict residents to viewing and changing only their own tickets and attachments.",
+    "priority": "High",
+    "acceptance": "Pass: A resident cannot access or alter another resident\u2019s ticket by manipulating an ID or URL; Warden actions are audit logged. Fail: Cross-resident access or an unlogged Warden action succeeds.",
+    "rationale": "Protects resident data and creates accountability."
+  }
+]
